@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.scss";
+import SearchIcon from "./assets/icon-search.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="input">
+        <h1>Sign Up</h1>
+        <div className="input-container">
+          {/* <SearchIcon /> */}
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Email address"
+          />
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Username address"
+          />
+        </div>
+        <button className="button">Login to your account </button>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Don't have an account? <span>Sing up</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }

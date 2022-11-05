@@ -1,0 +1,83 @@
+$button-color: #fc4747;
+$background-color: #10141e;
+$secondBackground-color: #161d2f;
+$under-line-color: #5a698f;
+$textColor: #ffff;
+
+// font size
+$header-one: 300;
+$header-two: 200;
+$body-text: 200;
+// font size
+$header-one-size: 2.3rem;
+$paragraph-text-size: 1.2rem;
+
+.App {
+  .input {
+    background-color: $secondBackground-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    height: 50vh;
+    margin: 10px auto;
+    border-radius: 10px;
+
+    h1 {
+      font-weight: $header-one;
+      font-size: $header-one-size;
+      color: $textColor;
+      margin-left: -230px;
+    }
+    .input-container {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      input {
+        margin-top: 25px;
+        width: 90%;
+        height: 5vh;
+        border: none;
+        border-bottom: 1px solid $under-line-color;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgba(255, 0, 0, 0);
+        color: $textColor;
+        caret-color: #fc4747;
+      }
+      input:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+  .button {
+    margin-top: 50px;
+    background-color: $button-color;
+    border: none;
+    padding: 15px 100px;
+    border-radius: 10px;
+    color: $textColor;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #fff;
+    color: #10141e;
+    cursor: pointer;
+  }
+  p {
+    font-size: $paragraph-text-size;
+    color: $textColor;
+    font-weight: $header-two;
+
+    span {
+      color: #fc4747;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
